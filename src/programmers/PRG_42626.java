@@ -3,13 +3,13 @@ package programmers;
 import java.util.*;
 
 public class PRG_42626 {
-    public int solution (int[] scovile, int k) {
+    public int solution(int[] scovile, int k) {
         // 오름차순 정리
         Queue<Integer> queue = new PriorityQueue<>();
 
-        for (Integer s : queue) {
-                // 빈 배열에 스코빌 지수 담기
-                queue.add(s);
+        for (Integer s : scovile) {
+            // 빈 배열에 스코빌 지수 담기
+            queue.add(s);
         }
         int answer = 0;
         while (queue.peek() < k) {
@@ -25,4 +25,4 @@ public class PRG_42626 {
         answer++;
         return answer;
     }
-    }
+}
