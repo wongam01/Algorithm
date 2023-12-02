@@ -15,3 +15,4 @@ public class BOJ_3052 {
         System.out.println(remainders.size());
     }
 }
+
