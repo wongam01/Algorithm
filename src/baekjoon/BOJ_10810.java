@@ -1,5 +1,6 @@
 package baekjoon;
 
+
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -10,8 +11,8 @@ public class BOJ_10810 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-        int N = Integer.parseInt(br.readLine());
-        int M = Integer.parseInt(br.readLine());
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
 
         int[] bucket = new int[N];
 
@@ -22,7 +23,7 @@ public class BOJ_10810 {
             int j = Integer.parseInt(st.nextToken()) - 1;
             int k = Integer.parseInt(st.nextToken());
 
-            for (int y = 0; y <= j; y++) {
+            for (int y = i; y <= j; y++) {
                 bucket[y] = k;
             }
         }
@@ -31,4 +32,5 @@ public class BOJ_10810 {
         }
         bw.flush();
     }
+
 }
