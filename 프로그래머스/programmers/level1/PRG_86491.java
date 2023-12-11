@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

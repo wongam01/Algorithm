@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level0;
 
 public class PRG_120845 {
     public int solution(int[] box, int n) {

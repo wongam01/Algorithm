@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 public class PRG_12950 {
     public int[][] solution(int[][] arr1 , int[][] arr2) {

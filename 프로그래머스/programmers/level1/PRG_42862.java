@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 public class PRG_42862 {
     public int solution(int n, int[] lost, int[] reserve) {
