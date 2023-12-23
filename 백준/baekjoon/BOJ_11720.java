@@ -12,10 +12,9 @@ public class BOJ_11720 {
         String[] str = br.readLine().split("");
         int sum = 0;
         for (int i = 0; i < n; i++) {
-            sum = Integer.parseInt(sum + str[i]);
+            sum = sum + Integer.parseInt( str[i]);
         }
         System.out.println(sum);
-
     }
 
 }
