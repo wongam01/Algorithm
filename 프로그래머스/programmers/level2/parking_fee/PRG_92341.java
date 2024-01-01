@@ -30,7 +30,6 @@ public class PRG_92341 {
     public int[] solution(int[] fees, String[] records) {
         // 차량 번호에 따른 주차 시간 저장
         HashMap<Integer, Integer> inFeeMap = new HashMap<>();
-        HashMap<Integer, Integer> outFeeMap = new HashMap<>();
         HashMap<Integer, Integer> totalFeeMap = new HashMap<>();
 
 
