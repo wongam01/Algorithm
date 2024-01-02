@@ -2,14 +2,14 @@ package programmers.level2.openChatting;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.StringTokenizer;
+
 public class PRG_42888 {
     private String manageChatRoom(String status,String nickName) {
         if (status.equals("Enter")) {
             return nickName + "님이 들어왔습니다";
-        } else if (status.equals("Leave")) {
-            return nickName + "님이 나갔습니다";
         }
-        return null;
+        return nickName + "님이 나갔습니다";
     }
 
     public String[] solution(String[] record) {
@@ -20,12 +20,11 @@ public class PRG_42888 {
         ArrayList<String> statusList = new ArrayList<>();
 
             for (String records : record) {
-                String[] parts = records.split(" ");
-                String status = parts[0];
-                String uid = parts[1];
-
+                StringTokenizer st = new StringTokenizer(records);
+                String status = st.nextToken();
+                String uid = st.nextToken();
                 if (status.equals("Enter") || status.equals("Change")) {
-                    String nickName = parts[2];
+                    String nickName = st.nextToken();
                     userMap.put(uid, nickName);
                 }
             }
@@ -35,6 +34,7 @@ public class PRG_42888 {
             String[] parts = records.split(" ");
             String status = parts[0];
             String uid = parts[1];
+
             if (status.equals("Enter") || status.equals("Leave")) {
                 String nickName = userMap.get(uid);
                 statusList.add(manageChatRoom(status, nickName));
